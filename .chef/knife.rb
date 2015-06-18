@@ -9,3 +9,5 @@ client_key               "#{current_dir}/tgondorf.pem"
 #validation_key           "#{current_dir}/classfactory-validator.pem"
 chef_server_url          "https://chef.classfactory.net/organizations/classfactory"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+
+knife[:editor]="vi"
