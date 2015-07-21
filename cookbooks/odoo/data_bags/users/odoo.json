@@ -1,0 +1,8 @@
+{
+  "id": "odoo",
+  "comment": "odoo",
+  "uid": 2000,
+  "gid": 0,
+  "home": "/opt/odoo",
+  "shell": "/bin/bash"
+}

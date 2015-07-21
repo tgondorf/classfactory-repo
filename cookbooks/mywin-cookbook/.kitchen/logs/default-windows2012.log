@@ -1,0 +1,85 @@
+I, [2015-06-23T11:05:42.452813 #29891]  INFO -- default-windows2012: -----> Converging <default-windows2012>...
+I, [2015-06-23T11:05:42.453379 #29891]  INFO -- default-windows2012: Preparing files for transfer
+I, [2015-06-23T11:05:42.453487 #29891]  INFO -- default-windows2012: Preparing dna.json
+I, [2015-06-23T11:05:42.453891 #29891]  INFO -- default-windows2012: Resolving cookbook dependencies with Berkshelf 3.2.4...
+I, [2015-06-23T11:05:42.936685 #29891]  INFO -- default-windows2012: Removing non-cookbook files before transfer
+I, [2015-06-23T11:05:42.953560 #29891]  INFO -- default-windows2012: Preparing validation.pem
+I, [2015-06-23T11:05:42.956034 #29891]  INFO -- default-windows2012: Preparing client.rb
+I, [2015-06-23T11:05:44.769341 #29891]  INFO -- default-windows2012: -----> Installing Chef Omnibus (12.3.0)
+I, [2015-06-23T11:05:44.769521 #29891]  INFO -- default-windows2012: Downloading package from file:///c:/share/chef/chef-client-12.3.0-1.msi
+I, [2015-06-23T11:05:44.769614 #29891]  INFO -- default-windows2012: Download complete.
+I, [2015-06-23T11:05:44.769719 #29891]  INFO -- default-windows2012: Successfully verified C:\Users\vagrant\AppData\Local\Temp\chef-12.3.0.msi
+I, [2015-06-23T11:05:44.769803 #29891]  INFO -- default-windows2012: 
+I, [2015-06-23T11:05:44.769832 #29891]  INFO -- default-windows2012: Installing Chef Omnibus package C:\Users\vagrant\AppData\Local\Temp\chef-12.3.0.msi
+I, [2015-06-23T11:06:57.455011 #29891]  INFO -- default-windows2012: Installation complete
+I, [2015-06-23T11:06:57.915037 #29891]  INFO -- default-windows2012: Transferring files to <default-windows2012>
+I, [2015-06-23T11:07:08.254219 #29891]  INFO -- default-windows2012: Starting Chef Client, version 12.3.0
+I, [2015-06-23T11:07:15.581725 #29891]  INFO -- default-windows2012: Creating a new client identity for default-windows2012 using the validator key.
+I, [2015-06-23T11:07:15.581856 #29891]  INFO -- default-windows2012: [2015-06-23T02:07:14-07:00] WARN: Child with name 'dna.json' found in multiple directories: C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json and C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json
+I, [2015-06-23T11:07:15.581981 #29891]  INFO -- default-windows2012: [2015-06-23T02:07:15-07:00] WARN: Child with name 'dna.json' found in multiple directories: C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json and C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json
+I, [2015-06-23T11:07:15.582168 #29891]  INFO -- default-windows2012: resolving cookbooks for run list: ["mywin-cookbook::default", "mywin-cookbook::sample_dsc"]
+I, [2015-06-23T11:07:15.582209 #29891]  INFO -- default-windows2012: [2015-06-23T02:07:15-07:00] WARN: Child with name 'dna.json' found in multiple directories: C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json and C:/Users/vagrant/AppData/Local/Temp/kitchen/dna.json
+I, [2015-06-23T11:07:18.609477 #29891]  INFO -- default-windows2012: Synchronizing Cookbooks:
+I, [2015-06-23T11:07:19.719836 #29891]  INFO -- default-windows2012:   - mywin-cookbook
+I, [2015-06-23T11:07:21.501787 #29891]  INFO -- default-windows2012:   - windows
+I, [2015-06-23T11:07:22.453747 #29891]  INFO -- default-windows2012:   - git
+I, [2015-06-23T11:07:23.674441 #29891]  INFO -- default-windows2012:   - powershell
+I, [2015-06-23T11:07:23.674613 #29891]  INFO -- default-windows2012:   - chef_handler
+I, [2015-06-23T11:07:25.665359 #29891]  INFO -- default-windows2012:   - build-essential
+I, [2015-06-23T11:07:25.665556 #29891]  INFO -- default-windows2012:   - dmg
+I, [2015-06-23T11:07:25.665691 #29891]  INFO -- default-windows2012:   - yum-epel
+I, [2015-06-23T11:07:25.665813 #29891]  INFO -- default-windows2012:   - ms_dotnet45
+I, [2015-06-23T11:07:25.665908 #29891]  INFO -- default-windows2012:   - ms_dotnet4
+I, [2015-06-23T11:07:25.666014 #29891]  INFO -- default-windows2012:   - ms_dotnet2
+I, [2015-06-23T11:07:25.666078 #29891]  INFO -- default-windows2012:   - yum
+I, [2015-06-23T11:07:25.666101 #29891]  INFO -- default-windows2012: Compiling Cookbooks...
+I, [2015-06-23T11:07:25.666194 #29891]  INFO -- default-windows2012: [2015-06-23T02:07:25-07:00] WARN: The on_platforms option to node_map has been deprecated
+I, [2015-06-23T11:07:25.666293 #29891]  INFO -- default-windows2012: [2015-06-23T02:07:25-07:00] WARN: The on_platforms option to node_map has been deprecated
+I, [2015-06-23T11:07:25.666393 #29891]  INFO -- default-windows2012: Converging 5 resources
+I, [2015-06-23T11:07:25.666417 #29891]  INFO -- default-windows2012: Recipe: mywin-cookbook::default
+I, [2015-06-23T11:07:25.666448 #29891]  INFO -- default-windows2012:   * log[*** Hello from mywin-cookbook::default] action write
+I, [2015-06-23T11:07:25.666470 #29891]  INFO -- default-windows2012:   
+I, [2015-06-23T11:07:25.666492 #29891]  INFO -- default-windows2012:   * registry_key[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\chef-client] action create
+I, [2015-06-23T11:07:25.666514 #29891]  INFO -- default-windows2012:     - create key HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\chef-client
+I, [2015-06-23T11:07:25.666537 #29891]  INFO -- default-windows2012:     - set value {:name=>"DelayedAutostart", :type=>:dword, :data=>1}
+I, [2015-06-23T11:07:25.666586 #29891]  INFO -- default-windows2012: Recipe: mywin-cookbook::sample_dsc
+I, [2015-06-23T11:07:30.655652 #29891]  INFO -- default-windows2012: 
+I, [2015-06-23T11:07:30.655816 #29891]  INFO -- default-windows2012:     - converge DSC configuration 'DSC_Directory'
+I, [2015-06-23T11:07:30.655846 #29891]  INFO -- default-windows2012:     - converge DSC resource [[File]DSC_Directory] by The system cannot find the file specified.
+I, [2015-06-23T11:07:30.655868 #29891]  INFO -- default-windows2012:     The related file/directory is: C:/DSC.
+I, [2015-06-23T11:07:30.655922 #29891]  INFO -- default-windows2012:     [C:/DSC] Copying from  and setting attributes.
+I, [2015-06-23T11:07:30.655946 #29891]  INFO -- default-windows2012:   * cookbook_file[C:\DSC\DSC_File.ps1] action create
+I, [2015-06-23T11:07:30.655966 #29891]  INFO -- default-windows2012:     - create new file C:\DSC\DSC_File.ps1
+I, [2015-06-23T11:07:30.655986 #29891]  INFO -- default-windows2012:     - update content in file C:\DSC\DSC_File.ps1 from none to e7bc0b
+I, [2015-06-23T11:07:30.656007 #29891]  INFO -- default-windows2012:     --- C:\DSC\DSC_File.ps1	2015-06-23 02:07:30.000000000 -0700
+I, [2015-06-23T11:07:30.656028 #29891]  INFO -- default-windows2012:     +++ C:\DSC/DSC_File.ps120150623-3308-1xebw8	2015-06-23 02:07:30.000000000 -0700
+I, [2015-06-23T11:07:30.656048 #29891]  INFO -- default-windows2012:     @@ -1 +1,19 @@
+I, [2015-06-23T11:07:30.656068 #29891]  INFO -- default-windows2012:     +Configuration 'DSC_File'
+I, [2015-06-23T11:07:30.656086 #29891]  INFO -- default-windows2012:     +{
+I, [2015-06-23T11:07:30.656105 #29891]  INFO -- default-windows2012:     +  param
+I, [2015-06-23T11:07:30.656124 #29891]  INFO -- default-windows2012:     +  (
+I, [2015-06-23T11:07:30.656144 #29891]  INFO -- default-windows2012:     +    $sourcePath,
+I, [2015-06-23T11:07:30.656163 #29891]  INFO -- default-windows2012:     +    $destinationPath = ''
+I, [2015-06-23T11:07:30.656182 #29891]  INFO -- default-windows2012:     +  )
+I, [2015-06-23T11:07:30.656218 #29891]  INFO -- default-windows2012:     +  Node 'localhost' 
+I, [2015-06-23T11:07:30.656238 #29891]  INFO -- default-windows2012:     +  {
+I, [2015-06-23T11:07:30.656257 #29891]  INFO -- default-windows2012:     +    File LogFile
+I, [2015-06-23T11:07:30.656276 #29891]  INFO -- default-windows2012:     +    {
+I, [2015-06-23T11:07:30.656295 #29891]  INFO -- default-windows2012:     +      SourcePath = $sourcePath
+I, [2015-06-23T11:07:30.656314 #29891]  INFO -- default-windows2012:     +      DestinationPath = $destinationPath
+I, [2015-06-23T11:07:30.656334 #29891]  INFO -- default-windows2012:     +      Ensure = "Present"
+I, [2015-06-23T11:07:30.656353 #29891]  INFO -- default-windows2012:     +    }
+I, [2015-06-23T11:07:30.656372 #29891]  INFO -- default-windows2012:     +  }
+I, [2015-06-23T11:07:30.656391 #29891]  INFO -- default-windows2012:     +}
+I, [2015-06-23T11:07:30.656410 #29891]  INFO -- default-windows2012:     +
+I, [2015-06-23T11:07:33.928259 #29891]  INFO -- default-windows2012: 
+I, [2015-06-23T11:07:33.928387 #29891]  INFO -- default-windows2012:     - converge DSC configuration 'DSC_File'
+I, [2015-06-23T11:07:33.928422 #29891]  INFO -- default-windows2012:     - converge DSC resource [[File]LogFile] by The system cannot find the file specified.
+I, [2015-06-23T11:07:33.928445 #29891]  INFO -- default-windows2012:     The related file/directory is: C:\Users\b.txt.
+I, [2015-06-23T11:07:33.928475 #29891]  INFO -- default-windows2012:     Building file list from cache.
+I, [2015-06-23T11:07:33.928495 #29891]  INFO -- default-windows2012:     [C:\Users\b.txt] Copying from C:\DSC\DSC_File.ps1 and setting attributes.
+I, [2015-06-23T11:07:33.928627 #29891]  INFO -- default-windows2012: 
+I, [2015-06-23T11:07:33.928687 #29891]  INFO -- default-windows2012: Running handlers:
+I, [2015-06-23T11:07:33.928709 #29891]  INFO -- default-windows2012: Running handlers complete
+I, [2015-06-23T11:07:33.928729 #29891]  INFO -- default-windows2012: Chef Client finished, 5/5 resources updated in 30.421882 seconds
+I, [2015-06-23T11:07:33.961173 #29891]  INFO -- default-windows2012: Finished converging <default-windows2012> (1m51.51s).

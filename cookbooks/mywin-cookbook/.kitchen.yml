@@ -17,7 +17,7 @@ driver:
   - ["private_network", {ip: "192.168.56.30"}]
   # Mount local /Users/apop/chef-kits folder as c:\share on the VM  
   synced_folders:
-  - ['/Users/apop/chef-kits', 'c:/share', 'disabled: false']
+  - ['/Users/tgondorf/chef-kits', 'c:/share', 'disabled: false']
   customize:
     cpus: 2
     memory: 4096
@@ -25,7 +25,7 @@ driver:
 platforms:
   - name: windows2012
     driver_config:
-      box: win2012r2-nocm
+      box: win2012r2
 
 suites:
   - name: default
