@@ -30,5 +30,5 @@ directory '/opt/odoo' do
 end
 
 service 'odoo-server' do
-  action :restart
+  action :start
 end
